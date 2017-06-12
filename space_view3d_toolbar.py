@@ -1278,7 +1278,7 @@ class VIEW3D_PT_stencil_projectpaint(View3DPanel, Panel):
         col.menu("VIEW3D_MT_tools_projectpaint_stencil", text=stencil_text, translate=False)
 
         col.label("Stencil Image")
-        col.template_ID(ipaint, "stencil_image")
+        col.template_ID(ipaint, "stencil_image", open="image.open")
         col.operator("image.new", text="New").gen_context = 'PAINT_STENCIL'
 
         col.label("Visualization")
